@@ -1,0 +1,17 @@
+ <!-- contact card -->
+<div class="d-flex justify-content-center align-items-center pt-5">
+     <div class="col-lg-4 d-flex justify-content-center ">
+        <div class="card align-items-center p-2" style="width:50rem">
+            <img class="mt-4" width="120px" height="130px" [src]="contact.photo" alt="img">
+            <div class="card-body">
+                <h3 class="card-title">{{contact.name}}</h3>
+                <p class="mt-4"> <i class="fa-solid fa-id-card"></i> &nbsp;&nbsp; {{contact.id}} </p>
+                <p> <i class="fa-solid fa-mobile"></i> &nbsp;&nbsp; {{contact.mobile}} </p>
+                <p> <i class="fa-solid fa-envelope"></i> &nbsp;&nbsp; {{contact.email}} </p>
+                <p> <i class="fa-solid fa-building"></i> &nbsp;&nbsp; {{contact.company}} </p>
+                <p> <i class="fa-solid fa-user-doctor"></i> &nbsp;&nbsp; {{contact.title}} </p>
+                <p> <i class="fa-solid fa-layer-group"></i> &nbsp;&nbsp; {{group}} </p>
+            </div>
+        </div>
+    
+</div>

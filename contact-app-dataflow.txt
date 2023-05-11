@@ -1,0 +1,43 @@
+                
+                
+                Contact Mnagement app - workflow
+
+--------------------------------------------------------------
+
+1.  create angular project
+2.  clean the code by removing data from appcomponent.html
+3.  Run project by command ng s 
+4.  Link all external libraries : bootstrap , font-awesome , google-font in index.html
+5.  create components:
+    - header
+    - footer
+    - all-contact
+    - add-contact
+    - view-contact
+    - edit-contact
+    - page-not-found
+6.  delete all spec.ts files from each userdefined components  (it is need for testing purpose).  
+7.  Setup path for each components in approutingmodule.ts
+    - all-contact : path - http://localhost:4200/
+    - add-contact : path - http://localhost:4200/add-contact
+    - view-contact : path - http://localhost:4200/view-contact/id
+    - edit-contact : path - http://localhost:4200/edit-contact/id
+    - page-not-found : 
+
+       eg :  const routes: Routes = [
+             {
+               path:'',component:AllContactComponent
+             },
+            ];
+
+8.  To navigate according to component use router-outlet selector in appcomponent.html     
+
+        eg :  <footer>
+                 <app-footer></app-footer>
+              </footer>  
+
+9.  Design Components      
+10. Page not found page
+11. API
+12. Create services to share common logic (api call) between components : ng g s service-folder/service-name
+13. Dependency Inject 'HttpClient' class in service class constructor
